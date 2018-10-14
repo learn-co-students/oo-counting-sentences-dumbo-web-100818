@@ -17,9 +17,9 @@ class String
   def count_sentences
     one = self.gsub("?", ".")
     two = one.gsub("!", ".")
-    three = two.gsub(";", ".")
-    three.split(".").count
+    #three = two.gsub(";", ".")
+    two.split(". ").count
   end
 end
 
-binding.pry
+#binding.pry
